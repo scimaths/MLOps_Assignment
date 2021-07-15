@@ -1,0 +1,6 @@
+[cache]
+    dir = E:/external_cache
+[core]
+    remote = storage
+['remote "storage"']
+    url = s3://mlops-ass2-200050148/dvcstore
