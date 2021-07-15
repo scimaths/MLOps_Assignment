@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn import metrics
 import pandas as pd
 import dvc.api
@@ -22,7 +22,7 @@ X_train = train.iloc[:,:-1].copy()
 y_train = train.iloc[:,-1].copy()
 X_test = test.iloc[:,:-1].copy()
 y_test = test.iloc[:,-1].copy()
-clf = DecisionTreeClassifier()
+clf = RandomForestClassifier(n_estimators = 30, random_state = 5)
 clf = clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 accuracy = metrics.accuracy_score(y_test, y_pred)
