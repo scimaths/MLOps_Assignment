@@ -2,6 +2,7 @@
     remote = metrics
 ['remote "storage"']
     url = s3://mlopsfinalassignment200050148/dvcstore
+    region = ap-south-1
 ['remote "models"']
     url = s3://mlopsfinalassignment200050148/models
 ['remote "data"']
