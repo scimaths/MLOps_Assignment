@@ -1,6 +1,10 @@
-[cache]
-    dir = E:/external_cache
 [core]
-    remote = storage
+    remote = metrics
 ['remote "storage"']
-    url = s3://mlops-ass2-200050148/dvcstore
+    url = s3://mlopsfinalassignment200050148/dvcstore
+['remote "models"']
+    url = s3://mlopsfinalassignment200050148/models
+['remote "data"']
+    url = s3://mlopsfinalassignment200050148/data
+['remote "metrics"']
+    url = s3://mlopsfinalassignment200050148/metrics
