@@ -1,0 +1,14 @@
+[core]
+    remote = storage
+['remote "storage"']
+    url = s3://mlopsfinalassignment200050148/dvcstore
+    region = ap-south-1
+['remote "models"']
+    url = s3://mlopsfinalassignment200050148/models
+    region = ap-south-1
+['remote "data"']
+    url = s3://mlopsfinalassignment200050148/data
+    region = ap-south-1
+['remote "metrics"']
+    url = s3://mlopsfinalassignment200050148/metrics
+    region = ap-south-1
