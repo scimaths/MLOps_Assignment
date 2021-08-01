@@ -15,7 +15,7 @@ class Model:
         self.model = pycl.load_model(modelname, platform = 'aws', authentication = { 'bucket' : bucketname })
     
     def predict (self, data):
-        predictions = pycl.predict_model(self.model, data = data).Label.to_list()
+        predictions = pycl.predict_model(self.model, data = data).Class.to_list()
         return predictions
 
 
